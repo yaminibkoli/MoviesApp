@@ -2,8 +2,8 @@
 //  MoviesCollectionViewCell.swift
 //  BookMyMovies
 //
-//  Created by Kunal Malve on 19/03/20.
-//  Copyright © 2020 Kunal Malve. All rights reserved.
+//  Created by Yamini Koli on 19/03/20.
+//  Copyright © 2020 Yamini Koli. All rights reserved.
 //
 
 import UIKit

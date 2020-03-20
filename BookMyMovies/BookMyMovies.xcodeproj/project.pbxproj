@@ -16,6 +16,7 @@
 		D938B3EF24229F1A00203C10 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938B3EE24229F1A00203C10 /* ModelData.swift */; };
 		D938B3F12422A14700203C10 /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938B3F02422A14700203C10 /* MoviesCollectionViewCell.swift */; };
 		D938B3F32422B0CD00203C10 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938B3F22422B0CD00203C10 /* MovieDetailViewController.swift */; };
+		D9BDE3DB2423F3EC0070F780 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BDE3DA2423F3EC0070F780 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D938B3EE24229F1A00203C10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D938B3F02422A14700203C10 /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		D938B3F22422B0CD00203C10 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		D9BDE3DA2423F3EC0070F780 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,59 @@
 		D938B3D92422958600203C10 /* BookMyMovies */ = {
 			isa = PBXGroup;
 			children = (
-				D938B3DA2422958600203C10 /* AppDelegate.swift */,
-				D938B3DC2422958600203C10 /* SceneDelegate.swift */,
-				D938B3DE2422958600203C10 /* ViewController.swift */,
-				D938B3E02422958600203C10 /* Main.storyboard */,
+				D9E97B172423F74800B2C459 /* SupportingFiles */,
+				D9E97B162423F73700B2C459 /* Controller */,
+				D9E97B152423F72200B2C459 /* View */,
+				D9E97B142423F70B00B2C459 /* ViewModel */,
+				D9E97B132423F6F300B2C459 /* Model */,
 				D938B3E32422959600203C10 /* Assets.xcassets */,
-				D938B3E52422959600203C10 /* LaunchScreen.storyboard */,
 				D938B3E82422959600203C10 /* Info.plist */,
+			);
+			path = BookMyMovies;
+			sourceTree = "<group>";
+		};
+		D9E97B132423F6F300B2C459 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				D938B3EE24229F1A00203C10 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9E97B142423F70B00B2C459 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9E97B152423F72200B2C459 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D938B3E02422958600203C10 /* Main.storyboard */,
+				D938B3E52422959600203C10 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D9E97B162423F73700B2C459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D938B3DE2422958600203C10 /* ViewController.swift */,
 				D938B3F02422A14700203C10 /* MoviesCollectionViewCell.swift */,
 				D938B3F22422B0CD00203C10 /* MovieDetailViewController.swift */,
 			);
-			path = BookMyMovies;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9E97B172423F74800B2C459 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D938B3DA2422958600203C10 /* AppDelegate.swift */,
+				D9BDE3DA2423F3EC0070F780 /* Utils.swift */,
+				D938B3DC2422958600203C10 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +193,7 @@
 				D938B3DF2422958600203C10 /* ViewController.swift in Sources */,
 				D938B3EF24229F1A00203C10 /* ModelData.swift in Sources */,
 				D938B3DB2422958600203C10 /* AppDelegate.swift in Sources */,
+				D9BDE3DB2423F3EC0070F780 /* Utils.swift in Sources */,
 				D938B3DD2422958600203C10 /* SceneDelegate.swift in Sources */,
 				D938B3F32422B0CD00203C10 /* MovieDetailViewController.swift in Sources */,
 				D938B3F12422A14700203C10 /* MoviesCollectionViewCell.swift in Sources */,
@@ -228,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
